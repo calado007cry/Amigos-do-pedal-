@@ -1,0 +1,1173 @@
+x<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Local SEO -->
+    <title>Amigos do Pedal | Bicicletas e Oficina em Vila Valqueire - RJ</title>
+    <meta name="description" content="Loja oficial e revendedor autorizado OGGI em Vila Valqueire, Rio de Janeiro. Bicicletas MTB, Speed, E-bikes, Peças Shimano, Acessórios e Oficina Especializada.">
+    <meta name="keywords" content="bicicleta Vila Valqueire, bicicletaria Vila Valqueire, loja de bicicleta Vila Valqueire, Amigos do Pedal, bicicletas Rio de Janeiro, OGGI bikes, oficina de bicicleta">
+
+    <!-- Schema.org LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BikeStore",
+      "name": "Amigos do Pedal",
+      "image": "https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=1200&q=80",
+      "@id": "https://www.instagram.com/amigosdopedal_loja/",
+      "url": "https://www.instagram.com/amigosdopedal_loja/",
+      "telephone": "(21) 2453-4856",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rua das Camélias, 34 - Loja F",
+        "addressLocality": "Vila Valqueire",
+        "addressRegion": "RJ",
+        "postalCode": "21330-200",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -22.8895,
+        "longitude": -43.3642
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      "sameAs": [
+        "https://www.instagram.com/amigosdopedal_loja/"
+      ]
+    }
+    </script>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0B111E',
+                            card: '#131B2E',
+                            lightCard: '#1E293B',
+                            neon: '#00FF66',
+                            green: '#10B981',
+                            hoverNeon: '#00D652',
+                            grayText: '#94A3B8'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts & Font Awesome Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0B111E; color: #F8FAFC; }
+        .neon-glow { box-shadow: 0 0 20px rgba(0, 255, 102, 0.25); }
+        .neon-text-glow { text-shadow: 0 0 10px rgba(0, 255, 102, 0.5); }
+        .smooth-transition { transition: all 0.3s ease-in-out; }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0B111E; }
+        ::-webkit-scrollbar-thumb { background: #1E293B; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #00FF66; }
+    </style>
+</head>
+<body class="antialiased selection:bg-brand-neon selection:text-black">
+
+    <!-- CONFIGURATION CONSTANTS NOTICE IN CONSOLE -->
+    <script>
+        // CONFIGURAÇÕES GERAIS DA LOJA
+        const CONFIG = {
+            WHATSAPP_NUMBER: "[WHATSAPP_NUMBER]", // Exemplo: "5521999999999" (Substitua quando disponível)
+            PHONE_NUMBER: "(21) 2453-4856",
+            EMAIL: "amigos.do.pedal@hotmail.com",
+            ADDRESS: "Rua das Camélias, 34 - Loja F, Vila Valqueire, Rio de Janeiro - RJ, 21330-200",
+            HORARIO: "[HORÁRIO]", // Ex: Seg a Sex: 08h às 18h | Sáb: 08h às 14h
+            INSTAGRAM_URL: "https://www.instagram.com/amigosdopedal_loja/"
+        };
+    </script>
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-brand-dark/95 backdrop-blur-md border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- BRAND LOGO -->
+                <a href="#inicio" class="flex items-center space-x-3 group">
+                    <div class="w-11 h-11 bg-brand-neon rounded-lg flex items-center justify-center font-black text-black text-2xl group-hover:scale-105 transition-transform shadow-[0_0_15px_rgba(0,255,102,0.4)]">
+                        <i class="fa-solid fa-person-biking"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-xl font-extrabold tracking-wider text-white uppercase flex items-center gap-1">
+                            AMIGOS DO PEDAL
+                        </span>
+                        <span class="text-[10px] text-brand-neon font-bold tracking-widest uppercase">Revenda Autorizada OGGI</span>
+                    </div>
+                </a>
+
+                <!-- DESKTOP NAV LINKS -->
+                <nav class="hidden lg:flex items-center space-x-6 text-sm font-semibold tracking-wide">
+                    <a href="#inicio" class="hover:text-brand-neon transition-colors py-1">INÍCIO</a>
+                    <a href="#bicicletas" class="hover:text-brand-neon transition-colors py-1">BICICLETAS</a>
+                    <a href="#produtos" class="hover:text-brand-neon transition-colors py-1">PEÇAS E ACESSÓRIOS</a>
+                    <a href="#servicos" class="hover:text-brand-neon transition-colors py-1">SERVIÇOS</a>
+                    <a href="#sobre" class="hover:text-brand-neon transition-colors py-1">SOBRE</a>
+                    <a   href="#localizacao" class="hover:text-brand-neon transition-colors py-1">CONTATO</a>
+                </nav>
+
+                <!-- HEADER ACTIONS (CART + WHATSAPP) -->
+                <div class="hidden sm:flex items-center space-x-4">
+                    <!-- CART BUTTON -->
+                    <button id="cartToggleBtn" onclick="toggleCartModal()" class="relative p-2.5 text-slate-300 hover:text-brand-neon bg-brand-card hover:bg-slate-800 rounded-xl border border-slate-700/60 transition-all">
+                        <i class="fa-solid fa-cart-shopping text-lg"></i>
+                        <span id="cartBadgeCount" class="absolute -top-1 -right-1 bg-brand-neon text-black text-xs font-black w-5 h-5 rounded-full flex items-center justify-center shadow-md">0</span>
+                    </button>
+
+                    <!-- WHATSAPP HEADER BUTTON -->
+                    <a id="headerWhatsappBtn" href="#" target="_blank" class="flex items-center gap-2 bg-brand-neon hover:bg-brand-hoverNeon text-black font-extrabold px-5 py-2.5 rounded-xl transition-all shadow-[0_0_15px_rgba(0,255,102,0.3)] hover:scale-105 text-sm uppercase">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>Falar no WhatsApp</span>
+                    </a>
+                </div>
+
+                <!-- MOBILE MENU TOGGLE -->
+                <div class="flex items-center space-x-3 lg:hidden">
+                    <button onclick="toggleCartModal()" class="relative p-2 text-slate-300 hover:text-brand-neon bg-brand-card rounded-lg border border-slate-700">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span id="cartBadgeCountMobile" class="absolute -top-1 -right-1 bg-brand-neon text-black text-[10px] font-black w-4 h-4 rounded-full flex items-center justify-center">0</span>
+                    </button>
+                    <button id="mobileMenuBtn" onclick="toggleMobileMenu()" class="p-2 text-slate-300 hover:text-white focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- MOBILE NAV DROPDOWN -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-brand-card border-b border-slate-800 px-4 pt-3 pb-6 space-y-3">
+            <a href="#inicio" onclick="toggleMobileMenu()" class="block py-2 text-base font-medium text-slate-200 hover:text-brand-neon">INÍCIO</a>
+            <a href="#bicicletas" onclick="toggleMobileMenu()" class="block py-2 text-base font-medium text-slate-200 hover:text-brand-neon">BICICLETAS</a>
+            <a href="#produtos" onclick="toggleMobileMenu()" class="block py-2 text-base font-medium text-slate-200 hover:text-brand-neon">PEÇAS E ACESSÓRIOS</a>
+            <a href="#servicos" onclick="toggleMobileMenu()" class="block py-2 text-base font-medium text-slate-200 hover:text-brand-neon">SERVIÇOS</a>
+            <a href="#sobre" onclick="toggleMobileMenu()" class="block py-2 text-base font-medium text-slate-200 hover:text-brand-neon">SOBRE</a>
+            <a href="#localizacao" onclick="toggleMobileMenu()" class="block py-2 text-base font-medium text-slate-200 hover:text-brand-neon">CONTATO & LOCALIZAÇÃO</a>
+            <a id="mobileWhatsappLink" href="#" target="_blank" class="w-full mt-3 flex items-center justify-center gap-2 bg-brand-neon text-black font-extrabold py-3 rounded-xl uppercase">
+                <i class="fa-brands fa-whatsapp text-lg"></i> Falar no WhatsApp
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden bg-gradient-to-b from-brand-dark via-brand-card to-brand-dark">
+        <!-- Background Overlay / Grid effect -->
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#00FF66_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-neon/10 border border-brand-neon/30 text-brand-neon text-xs font-bold uppercase tracking-wider">
+                        <i class="fa-solid fa-shield-halved"></i> Sua Bicicletaria de Confiança em Vila Valqueire
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl font-black uppercase tracking-tight text-white leading-none">
+                        AMIGOS DO PEDAL <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-neon to-emerald-400">PERFORMANCE & PAIXÃO</span>
+                    </h1>
+
+                    <p class="text-slate-300 text-lg md:text-xl font-normal max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Revendedora Oficial <strong>OGGI Bikes</strong>. Bicicletas Mountain Bike, Speed, Urbanas e Elétricas, peças originais Shimano, acessórios de alta qualidade e oficina mecânica especializada.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#bicicletas" class="w-full sm:w-auto bg-brand-neon hover:bg-brand-hoverNeon text-black font-extrabold px-8 py-4 rounded-xl text-center uppercase tracking-wider transition-all transform hover:-translate-y-1 shadow-[0_0_20px_rgba(0,255,102,0.3)]">
+                            <i class="fa-solid fa-bicycle mr-2"></i> Ver Bicicletas
+                        </a>
+                        <a id="heroWhatsappBtn" href="#" target="_blank" class="w-full sm:w-auto bg-brand-card hover:bg-slate-800 border border-slate-700 text-white font-bold px-8 py-4 rounded-xl text-center uppercase tracking-wider transition-all hover:border-brand-neon">
+                            <i class="fa-brands fa-whatsapp text-brand-neon text-lg mr-2"></i> Falar no WhatsApp
+                        </a>
+                    </div>
+
+                    <!-- HIGHLIGHT BADGES -->
+                    <div class="pt-8 grid grid-cols-3 gap-4 border-t border-slate-800/80 max-w-lg mx-auto lg:mx-0">
+                        <div>
+                            <span class="block text-xl font-extrabold text-white">OGGI</span>
+                            <span class="text-xs text-brand-grayText">Revendedor Oficial</span>
+                        </div>
+                        <div>
+                            <span class="block text-xl font-extrabold text-brand-neon">SHIMANO</span>
+                            <span class="text-xs text-brand-grayText">Peças Originais</span>
+                        </div>
+                        <div>
+                            <span class="block text-xl font-extrabold text-white">OFICINA</span>
+                            <span class="text-xs text-brand-grayText">Especializada</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HERO IMAGE CARD -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl bg-brand-card group">
+                        <img src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=1000&q=80" alt="Amigos do Pedal Bicicleta OGGI" class="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-transparent to-transparent opacity-80"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-4 bg-brand-dark/90 backdrop-blur-md rounded-xl border border-slate-700">
+                            <p class="text-xs font-bold text-brand-neon uppercase tracking-widest">Destaque da Loja</p>
+                            <h3 class="text-lg font-bold text-white">Mantenha sua bike em alta performance</h3>
+                            <p class="text-xs text-slate-400">Revisão completa, substituição de componentes e regulagem fina.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: BICICLETAS -->
+    <section id="bicicletas" class="py-20 bg-brand-dark relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-brand-neon font-bold text-sm tracking-widest uppercase">Catálogo Principal</span>
+                    <h2 class="text-3xl md:text-4xl font-extrabold uppercase text-white mt-1">Bicicletas em Destaque</h2>
+                </div>
+                <p class="text-slate-400 text-sm max-w-md mt-2 md:mt-0">
+                    Trilhas, asfalto ou mobilidade urbana. Encontre o modelo ideal com garantia e procedência oficial.
+                </p>
+            </div>
+
+            <!-- BICICLETAS GRID -->
+            <div id="bikesGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Injected via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: PEÇAS E ACESSÓRIOS -->
+    <section id="produtos" class="py-20 bg-brand-card/50 border-y border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-10">
+                <span class="text-brand-neon font-bold text-sm tracking-widest uppercase">Equipamentos & Componentes</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold uppercase text-white mt-1">Peças e Acessórios</h2>
+                <p class="text-slate-400 mt-2">Capacetes, sapatilhas, pneus, correntes, câmbios e tudo para o seu pedal.</p>
+            </div>
+
+            <!-- FILTERS -->
+            <div class="flex flex-wrap justify-center gap-2 mb-10" id="categoryFilters">
+                <button onclick="filterProducts('TODOS')" class="filter-btn active px-5 py-2.5 rounded-xl font-bold text-sm bg-brand-neon text-black transition-all">TODOS</button>
+                <button onclick="filterProducts('PEÇAS')" class="filter-btn px-5 py-2.5 rounded-xl font-bold text-sm bg-brand-card text-slate-300 hover:text-brand-neon border border-slate-700 transition-all">PEÇAS</button>
+                <button onclick="filterProducts('ACESSÓRIOS')" class="filter-btn px-5 py-2.5 rounded-xl font-bold text-sm bg-brand-card text-slate-300 hover:text-brand-neon border border-slate-700 transition-all">ACESSÓRIOS</button>
+                <button onclick="filterProducts('SEGURANÇA')" class="filter-btn px-5 py-2.5 rounded-xl font-bold text-sm bg-brand-card text-slate-300 hover:text-brand-neon border border-slate-700 transition-all">SEGURANÇA</button>
+            </div>
+
+            <!-- PRODUCTS GRID -->
+            <div id="productsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Injected via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: SERVIÇOS DE OFICINA -->
+    <section id="servicos" class="py-20 bg-brand-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-neon font-bold text-sm tracking-widest uppercase">Manutenção & Ajustes</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold uppercase text-white mt-1">Serviços Especializados de Oficina</h2>
+                <p class="text-slate-400 mt-2">Oficina estruturada para manter sua bike rodando macia e segura.</p>
+            </div>
+
+            <div id="servicesGrid" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Injected via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: INSTAGRAM & GALERIA DA LOJA -->
+    <section class="py-20 bg-brand-card/40 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between mb-12">
+                <div>
+                    <span class="text-brand-neon font-bold text-sm tracking-widest uppercase">Comunidade & Dia a Dia</span>
+                    <h2 class="text-3xl md:text-4xl font-extrabold uppercase text-white mt-1">Siga a Amigos do Pedal</h2>
+                    <p class="text-slate-400 text-sm mt-1">Acompanhe nossas novidades, entregas de bikes e eventos no Instagram.</p>
+                </div>
+                <a href="https://www.instagram.com/amigosdopedal_loja/" target="_blank" class="mt-4 md:mt-0 inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white font-bold px-6 py-3 rounded-xl transition-all shadow-lg">
+                    <i class="fa-brands fa-instagram text-xl"></i>
+                    <span>@amigosdopedal_loja</span>
+                </a>
+            </div>
+
+            <!-- INSTAGRAM GRID -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <a href="https://www.instagram.com/amigosdopedal_loja/" target="_blank" class="group relative rounded-xl overflow-hidden aspect-square border border-slate-700 bg-brand-dark">
+                    <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=600&q=80" alt="Instagram Amigos do Pedal" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <i class="fa-brands fa-instagram text-white text-3xl"></i>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/amigosdopedal_loja/" target="_blank" class="group relative rounded-xl overflow-hidden aspect-square border border-slate-700 bg-brand-dark">
+                    <img src="https://images.unsplash.com/photo-1511994298241-608e28f14fde?auto=format&fit=crop&w=600&q=80" alt="Instagram Amigos do Pedal" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <i class="fa-brands fa-instagram text-white text-3xl"></i>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/amigosdopedal_loja/" target="_blank" class="group relative rounded-xl overflow-hidden aspect-square border border-slate-700 bg-brand-dark">
+                    <img src="https://images.unsplash.com/photo-1576435728678-68d0fbf94e91?auto=format&fit=crop&w=600&q=80" alt="Instagram Amigos do Pedal" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <i class="fa-brands fa-instagram text-white text-3xl"></i>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/amigosdopedal_loja/" target="_blank" class="group relative rounded-xl overflow-hidden aspect-square border border-slate-700 bg-brand-dark">
+                    <img src="https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?auto=format&fit=crop&w=600&q=80" alt="Instagram Amigos do Pedal" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <i class="fa-brands fa-instagram text-white text-3xl"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: SOBRE A LOJA -->
+    <section id="sobre" class="py-20 bg-brand-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <span class="text-brand-neon font-bold text-sm tracking-widest uppercase">Institucional</span>
+                    <h2 class="text-3xl md:text-4xl font-extrabold uppercase text-white">Sobre a Amigos do Pedal</h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        Localizada no tradicional bairro de <strong>Vila Valqueire</strong>, a <strong>Amigos do Pedal</strong> é referência para ciclistas amadores, entusiastas e atletas profissionais do Rio de Janeiro.
+                    </p>
+                    <p class="text-slate-400 leading-relaxed">
+                        Como loja revendedora autorizada da marca <strong>OGGI</strong>, oferecemos suporte técnico especializado, garantia de fábrica, catálogo atualizado de bicicletas (MTB, Speed e Elétricas), além de peças de reposição e componentes das melhores marcas do mercado mundial.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 pt-4">
+                        <div class="p-4 rounded-xl bg-brand-card border border-slate-800">
+                            <i class="fa-solid fa-award text-brand-neon text-2xl mb-2"></i>
+                            <h4 class="font-bold text-white">Qualidade Garantida</h4>
+                            <p class="text-xs text-slate-400 mt-1">Produtos originais com garantia oficial dos fabricantes.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-brand-card border border-slate-800">
+                            <i class="fa-solid fa-wrench text-brand-neon text-2xl mb-2"></i>
+                            <h4 class="font-bold text-white">Mecânica Especializada</h4>
+                            <p class="text-xs text-slate-400 mt-1">Profissionais capacitados para manutenção e ajustes.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="rounded-2xl overflow-hidden border border-slate-700 bg-brand-card p-2 shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?auto=format&fit=crop&w=800&q=80" alt="Loja Amigos do Pedal Vila Valqueire" class="rounded-xl w-full h-[400px] object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: LOCALIZAÇÃO & CONTATO -->
+    <section id="localizacao" class="py-20 bg-brand-card/60 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-neon font-bold text-sm tracking-widest uppercase">Venha nos Visitar</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold uppercase text-white mt-1">Onde Estamos & Contato</h2>
+                <p class="text-slate-400 mt-2">Visite nossa loja física em Vila Valqueire ou envie uma mensagem direta.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                <!-- LOCATION INFO CARD -->
+                <div class="lg:col-span-5 bg-brand-card p-8 rounded-2xl border border-slate-800 space-y-6">
+                    <h3 class="text-xl font-bold text-white border-b border-slate-800 pb-4 uppercase">Informações de Contato</h3>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-lg bg-brand-neon/10 border border-brand-neon/30 flex items-center justify-center text-brand-neon shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-200">Endereço</h4>
+                                <p class="text-sm text-slate-400 mt-0.5">
+                                    Rua das Camélias, 34 - Loja F<br>
+                                    Vila Valqueire - Rio de Janeiro - RJ<br>
+                                    CEP 21330-200
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-lg bg-brand-neon/10 border border-brand-neon/30 flex items-center justify-center text-brand-neon shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-200">Telefone Fixo</h4>
+                                <p class="text-sm text-slate-400 mt-0.5">(21) 2453-4856</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-lg bg-brand-neon/10 border border-brand-neon/30 flex items-center justify-center text-brand-neon shrink-0">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-200">Horário de Funcionamento</h4>
+                                <p class="text-sm text-slate-400 mt-0.5">[HORÁRIO]</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-lg bg-brand-neon/10 border border-brand-neon/30 flex items-center justify-center text-brand-neon shrink-0">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-200">Instagram Oficial</h4>
+                                <a href="https://www.instagram.com/amigosdopedal_loja/" target="_blank" class="text-sm text-brand-neon hover:underline">@amigosdopedal_loja</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-4">
+                        <a href="https://maps.google.com/?q=Rua+das+Camélias,+34+-+Loja+F,+Vila+Valqueire,+Rio+de+Janeiro+-+RJ" target="_blank" class="w-full flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-white font-bold py-3 px-4 rounded-xl border border-slate-700 transition-all text-sm uppercase">
+                            <i class="fa-solid fa-route text-brand-neon"></i> Como Chegar pelo Google Maps
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CONTACT FORM -->
+                <div class="lg:col-span-7 bg-brand-card p-8 rounded-2xl border border-slate-800">
+                    <h3 class="text-xl font-bold text-white border-b border-slate-800 pb-4 mb-6 uppercase">Envie uma Mensagem</h3>
+                    
+                    <form id="contactForm" onsubmit="handleContactSubmit(event)" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="contactName" class="block text-xs font-bold uppercase text-slate-300 mb-1">Seu Nome *</label>
+                                <input type="text" id="contactName" required class="w-full bg-brand-dark border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-neon transition-colors" placeholder="Ex: Rodrigo Silva">
+                            </div>
+                            <div>
+                                <label for="contactPhone" class="block text-xs font-bold uppercase text-slate-300 mb-1">Telefone / WhatsApp *</label>
+                                <input type="tel" id="contactPhone" required class="w-full bg-brand-dark border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-neon transition-colors" placeholder="(21) 99999-9999">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="contactEmail" class="block text-xs font-bold uppercase text-slate-300 mb-1">E-mail</label>
+                            <input type="email" id="contactEmail" class="w-full bg-brand-dark border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-neon transition-colors" placeholder="seuemail@exemplo.com">
+                        </div>
+
+                        <div>
+                            <label for="contactSubject" class="block text-xs font-bold uppercase text-slate-300 mb-1">Assunto</label>
+                            <select id="contactSubject" class="w-full bg-brand-dark border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-neon transition-colors">
+                                <option value="Informações sobre Bicicletas">Informações sobre Bicicletas</option>
+                                <option value="Orçamento de Oficina">Orçamento de Oficina / Servicos</option>
+                                <option value="Peças e Acessórios">Peças e Acessórios</option>
+                                <option value="Outros">Outros assuntos</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="contactMessage" class="block text-xs font-bold uppercase text-slate-300 mb-1">Mensagem *</label>
+                            <textarea id="contactMessage" required rows="4" class="w-full bg-brand-dark border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-neon transition-colors" placeholder="Escreva sua mensagem aqui..."></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-brand-neon hover:bg-brand-hoverNeon text-black font-extrabold py-3.5 rounded-xl uppercase transition-all shadow-[0_0_15px_rgba(0,255,102,0.2)]">
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-dark border-t border-slate-800 py-12 text-slate-400 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 text-white font-black text-lg mb-3">
+                        <i class="fa-solid fa-person-biking text-brand-neon"></i>
+                        <span>AMIGOS DO PEDAL</span>
+                    </div>
+                    <p class="text-xs text-slate-400">Sua bicicletaria oficial e revendedora OGGI em Vila Valqueire, Rio de Janeiro.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-3 uppercase text-xs tracking-wider">Navegação</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#inicio" class="hover:text-brand-neon">Início</a></li>
+                        <li><a href="#bicicletas" class="hover:text-brand-neon">Bicicletas</a></li>
+                        <li><a href="#produtos" class="hover:text-brand-neon">Peças & Acessórios</a></li>
+                        <li><a href="#servicos" class="hover:text-brand-neon">Serviços de Oficina</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-3 uppercase text-xs tracking-wider">Contato</h4>
+                    <p class="text-xs">Tel: (21) 2453-4856</p>
+                    <p class="text-xs mt-1">Rua das Camélias, 34 - Loja F</p>
+                    <p class="text-xs">Vila Valqueire - Rio de Janeiro - RJ</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-3 uppercase text-xs tracking-wider">Acesso Rápido</h4>
+                    <button onclick="openAdminModal()" class="text-xs text-slate-500 hover:text-brand-neon transition-colors flex items-center gap-1">
+                        <i class="fa-solid fa-lock text-[10px]"></i> Área Administrativa
+                    </button>
+                </div>
+            </div>
+            <div class="border-t border-slate-800/80 pt-6 text-center text-xs text-slate-500">
+                &copy; <span id="currentYear"></span> Amigos do Pedal Comércio de Bicicletas LTDA. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <a id="floatingWhatsappBtn" href="#" target="_blank" class="fixed bottom-6 right-6 z-40 bg-emerald-500 hover:bg-emerald-400 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl transition-all hover:scale-110 neon-glow" aria-label="Atendimento pelo WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- CART MODAL / DRAWERS -->
+    <div id="cartModal" class="fixed inset-0 z-50 hidden bg-black/70 backdrop-blur-sm flex justify-end transition-opacity">
+        <div class="w-full max-w-md bg-brand-card border-l border-slate-800 h-full flex flex-col p-6 overflow-y-auto">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-4 mb-4">
+                <h3 class="text-lg font-bold text-white flex items-center gap-2">
+                    <i class="fa-solid fa-cart-shopping text-brand-neon"></i> Seu Carrinho
+                </h3>
+                <button onclick="toggleCartModal()" class="text-slate-400 hover:text-white text-xl">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <!-- CART ITEMS LIST -->
+            <div id="cartItemsList" class="flex-1 space-y-4 overflow-y-auto pr-1">
+                <!-- Injected via JavaScript -->
+            </div>
+
+            <!-- CART FOOTER -->
+            <div class="border-t border-slate-800 pt-4 mt-4 space-y-4">
+                <div class="flex justify-between items-center text-sm">
+                    <span class="text-slate-400">Subtotal:</span>
+                    <span id="cartSubtotal" class="font-bold text-white">R$ 0,00</span>
+                </div>
+                <div class="flex justify-between items-center text-lg font-extrabold">
+                    <span class="text-white">Total:</span>
+                    <span id="cartTotal" class="text-brand-neon">R$ 0,00</span>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-3 pt-2">
+                    <button onclick="clearCart()" class="bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold py-3 rounded-xl text-xs uppercase">
+                        Limpar
+                    </button>
+                    <button onclick="openCheckoutModal()" class="bg-brand-neon hover:bg-brand-hoverNeon text-black font-extrabold py-3 rounded-xl text-xs uppercase">
+                        Checkout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CHECKOUT MODAL -->
+    <div id="checkoutModal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-brand-card border border-slate-700 rounded-2xl w-full max-w-lg p-6 max-h-[90vh] overflow-y-auto relative">
+            <button onclick="closeCheckoutModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white text-xl">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <h3 class="text-xl font-bold text-white mb-4 uppercase flex items-center gap-2">
+                <i class="fa-solid fa-bag-shopping text-brand-neon"></i> Finalizar Pedido
+            </h3>
+
+            <div class="bg-brand-dark p-4 rounded-xl border border-slate-800 mb-6 space-y-2">
+                <h4 class="text-xs font-bold uppercase text-brand-neon">Resumo dos Itens</h4>
+                <div id="checkoutSummaryList" class="text-xs text-slate-300 space-y-1"></div>
+                <div class="border-t border-slate-800 pt-2 flex justify-between font-bold text-sm text-white">
+                    <span>Total a Pagar:</span>
+                    <span id="checkoutTotalVal" class="text-brand-neon">R$ 0,00</span>
+                </div>
+            </div>
+
+            <form id="checkoutForm" onsubmit="processCheckout(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-bold uppercase text-slate-300 mb-1">Nome Completo *</label>
+                    <input type="text" id="chkName" required class="w-full bg-brand-dark border border-slate-700 rounded-xl px-3 py-2.5 text-sm text-white focus:outline-none focus:border-brand-neon">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold uppercase text-slate-300 mb-1">Telefone / WhatsApp *</label>
+                    <input type="tel" id="chkPhone" required class="w-full bg-brand-dark border border-slate-700 rounded-xl px-3 py-2.5 text-sm text-white focus:outline-none focus:border-brand-neon" placeholder="(21) 99999-9999">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold uppercase text-slate-300 mb-1">Endereço de Entrega / Retirada *</label>
+                    <input type="text" id="chkAddress" required class="w-full bg-brand-dark border border-slate-700 rounded-xl px-3 py-2.5 text-sm text-white focus:outline-none focus:border-brand-neon" placeholder="Rua, Número, Bairro ou Retirada na Loja">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold uppercase text-slate-300 mb-1">Observações</label>
+                    <textarea id="chkNotes" rows="2" class="w-full bg-brand-dark border border-slate-700 rounded-xl px-3 py-2.5 text-sm text-white focus:outline-none focus:border-brand-neon" placeholder="Ex: Tamanho do quadro M, preferência por cor preta..."></textarea>
+                </div>
+
+                <button type="submit" id="chkSubmitBtn" class="w-full bg-brand-neon hover:bg-brand-hoverNeon text-black font-extrabold py-3.5 rounded-xl uppercase transition-all mt-4">
+                    Confirmar e Enviar Pedido
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- PRODUCT DETAIL MODAL -->
+    <div id="productDetailModal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div id="productDetailContent" class="bg-brand-card border border-slate-700 rounded-2xl w-full max-w-2xl p-6 relative">
+            <!-- Dynamically populated -->
+        </div>
+    </div>
+
+    <!-- ADMIN BACKEND PREVIEW MODAL -->
+    <div id="adminModal" class="fixed inset-0 z-50 hidden bg-black/85 backdrop-blur-md flex items-center justify-center p-4">
+        <div class="bg-brand-card border border-slate-700 rounded-2xl w-full max-w-4xl p-6 max-h-[90vh] overflow-y-auto relative">
+            <button onclick="closeAdminModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white text-xl">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            
+            <div class="flex items-center justify-between border-b border-slate-800 pb-4 mb-6">
+                <div>
+                    <h3 class="text-xl font-bold text-white uppercase flex items-center gap-2">
+                        <i class="fa-solid fa-user-gear text-brand-neon"></i> Painel do Administrador (Protótipo REST API)
+                    </h3>
+                    <p class="text-xs text-slate-400">Gerenciamento de Pedidos e Estatísticas da Amigos do Pedal</p>
+                </div>
+            </div>
+
+            <div class="space-y-6">
+                <div>
+                    <h4 class="text-sm font-bold uppercase text-brand-neon mb-3">Últimos Pedidos Recebidos</h4>
+                    <div class="overflow-x-auto border border-slate-800 rounded-xl">
+                        <table class="w-full text-left text-xs text-slate-300">
+                            <thead class="bg-brand-dark text-white uppercase text-[10px] tracking-wider border-b border-slate-800">
+                                <tr>
+                                    <th class="p-3">ID</th>
+                                    <th class="p-3">Cliente</th>
+                                    <th class="p-3">Telefone</th>
+                                    <th class="p-3">Total</th>
+                                    <th class="p-3">Status</th>
+                                    <th class="p-3">Ação</th>
+                                </tr>
+                            </thead>
+                            <tbody id="adminOrdersTable" class="divide-y divide-slate-800">
+                                <!-- Injected via JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="bg-brand-dark p-4 rounded-xl border border-slate-800">
+                    <h4 class="text-xs font-bold uppercase text-white mb-2"><i class="fa-solid fa-database text-brand-neon mr-1"></i> Arquitetura do Banco de Dados Backend</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Estrutura preparada para integração com API Node.js/Express e PostgreSQL/MySQL:
+                        <code class="block mt-2 bg-slate-900 p-2 rounded text-emerald-400">Tables: users | products | categories | orders | order_items | services</code>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT APPLICATION LOGIC -->
+    <script>
+        // DATA CATALOG
+        const BICYCLES = [
+            {
+                id: "b1",
+                name: "OGGI Big Wheel 7.0 2024",
+                category: "MTB",
+                price: 3290.00,
+                image: "https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=800&q=80",
+                description: "Mountain bike de alta performance para trilhas e passeios. Quadro em alumínio ultraleve, transmissão Shimano e suspensão com trava no guidão.",
+                specs: "Quadro Alumínio 6061 T6 | Shimano Tourney/Acera 18v | Suspensão 100mm | Freios Hidráulicos"
+            },
+            {
+                id: "b2",
+                name: "OGGI Float Sport Feminina",
+                category: "MTB Feminina",
+                price: 2890.00,
+                image: "https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?auto=format&fit=crop&w=800&q=80",
+                description: "Projetada com geometria específica para o público feminino, garantindo maior conforto nos ombros e estabilidade nos pedais.",
+                specs: "Geometria Feminina Ergonomica | Transmissão Shimano 24v | Freio a Disco Hidráulico"
+            },
+            {
+                id: "b3",
+                name: "OGGI Velloce Disc Speed",
+                category: "Speed / Estrada",
+                price: 4590.00,
+                image: "https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?auto=format&fit=crop&w=800&q=80",
+                description: "Ideal para velocidade e treinos em asfalto. Pneus finos, aerodinâmica aprimorada e transmissão eficiente.",
+                specs: "Quadro Alumínio Triple Butted | Grupo Shimano Claris 16v | Freios a Disco Mecânicos"
+            }
+        ];
+
+        const PRODUCTS = [
+            {
+                id: "p1",
+                name: "Capacete Ciclismo MTB com Led",
+                category: "SEGURANÇA",
+                price: 189.90,
+                image: "https://images.unsplash.com/photo-1559348349-86f1f65817fe?auto=format&fit=crop&w=600&q=80",
+                description: "Capacete aerodinâmico com sinalizador traseiro de LED embutido e ajuste micrométrico."
+            },
+            {
+                id: "p2",
+                name: "Corrente Shimano HG-54 10v",
+                category: "PEÇAS",
+                price: 169.00,
+                image: "https://images.unsplash.com/photo-1576435728678-68d0fbf94e91?auto=format&fit=crop&w=600&q=80",
+                description: "Corrente original Shimano para transmissões de 10 velocidades MTB e Road."
+            },
+            {
+                id: "p3",
+                name: "Sapatilha Ciclismo MTB Absolute",
+                category: "ACESSÓRIOS",
+                price: 349.90,
+                image: "https://images.unsplash.com/photo-1511994298241-608e28f14fde?auto=format&fit=crop&w=600&q=80",
+                description: "Sapatilha resistente com cravos para excelente tração e ajuste com catraca de precisão."
+            },
+            {
+                id: "p4",
+                name: "Luva Ciclismo Gel Antiderrapante",
+                category: "ACESSÓRIOS",
+                price: 59.90,
+                image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=600&q=80",
+                description: "Luvas meio dedo com palma em gel para amortecimento de vibrações nas mãos."
+            }
+        ];
+
+        const SERVICES = [
+            {
+                id: "s1",
+                title: "Revisão Geral Completa",
+                description: "Desmontagem, limpeza ultrassônica de transmissão, lubrificação de rolamentos, alinhamento de rodas e regulagem de freios/câmbios.",
+                icon: "fa-wrench"
+            },
+            {
+                id: "s2",
+                title: "Regulagem de Câmbios e Freios",
+                description: "Ajuste preciso do tensionamento de cabos, alinhamento do gancheira e sangria de freios hidráulicos Shimano.",
+                icon: "fa-sliders"
+            },
+            {
+                id: "s3",
+                title: "Montagem e Bike Fitting",
+                description: "Montagem profissional de bicicletas novas na caixa e adaptação ergonômica da posição para evitar lesões.",
+                icon: "fa-person-biking"
+            }
+        ];
+
+        // STATE MANAGEMENT
+        let cart = JSON.parse(localStorage.getItem('amigospedal_cart')) || [];
+        let orders = JSON.parse(localStorage.getItem('amigospedal_orders')) || [
+            {
+                id: "PED-1024",
+                client: "Carlos Eduardo",
+                phone: "(21) 98888-7777",
+                total: 3290.00,
+                status: "EM PREPARAÇÃO",
+                date: "2026-10-05"
+            }
+        ];
+
+        // INITIALIZATION
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+            setupWhatsappLinks();
+            renderBicycles();
+            renderProducts(PRODUCTS);
+            renderServices();
+            updateCartUI();
+        });
+
+        // WHATSAPP LINK GENERATOR
+        function setupWhatsappLinks() {
+            const rawNumber = CONFIG.WHATSAPP_NUMBER.replace(/\D/g, '');
+            const target = rawNumber ? `https://wa.me/${rawNumber}` : `https://www.instagram.com/amigosdopedal_loja/`;
+            
+            document.getElementById('headerWhatsappBtn').href = target;
+            document.getElementById('heroWhatsappBtn').href = target;
+            document.getElementById('mobileWhatsappLink').href = target;
+            document.getElementById('floatingWhatsappBtn').href = target;
+        }
+
+        function createWhatsappMessageUrl(text) {
+            const rawNumber = CONFIG.WHATSAPP_NUMBER.replace(/\D/g, '');
+            if (!rawNumber) return `https://www.instagram.com/amigosdopedal_loja/`;
+            return `https://wa.me/${rawNumber}?text=${encodeURIComponent(text)}`;
+        }
+
+        // RENDER BICYCLES
+        function renderBicycles() {
+            const container = document.getElementById('bikesGrid');
+            container.innerHTML = BICYCLES.map(bike => `
+                <div class="bg-brand-card rounded-2xl overflow-hidden border border-slate-800 hover:border-brand-neon/50 transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <div class="relative overflow-hidden aspect-[4/3]">
+                            <img src="${bike.image}" alt="${bike.name}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-3 left-3 bg-brand-neon text-black text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">
+                                ${bike.category}
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-extrabold text-white group-hover:text-brand-neon transition-colors">${bike.name}</h3>
+                            <p class="text-xs text-slate-400 mt-2 line-clamp-2">${bike.description}</p>
+                            <div class="mt-4 text-xs font-semibold text-emerald-400 bg-emerald-950/40 p-2.5 rounded-lg border border-emerald-800/40">
+                                <i class="fa-solid fa-gear mr-1"></i> ${bike.specs}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 space-y-3">
+                        <div class="text-2xl font-black text-white">
+                            R$ ${bike.price.toLocaleString('pt-BR', {minimumFractionDigits: 2})}
+                        </div>
+                        <div class="grid grid-cols-2 gap-2">
+                            <button onclick="openProductDetail('${bike.id}', 'bike')" class="w-full bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold py-2.5 rounded-xl text-xs uppercase transition-colors">
+                                Detalhes
+                            </button>
+                            <a href="${createWhatsappMessageUrl(`Olá! Vi a bicicleta ${bike.name} no site da Amigos do Pedal e gostaria de saber mais informações.`)}" target="_blank" class="w-full bg-brand-neon hover:bg-brand-hoverNeon text-black font-extrabold py-2.5 rounded-xl text-xs uppercase flex items-center justify-center gap-1 transition-all">
+                                <i class="fa-brands fa-whatsapp text-sm"></i> Tenho Interesse
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // RENDER PRODUCTS
+        function renderProducts(items) {
+            const container = document.getElementById('productsGrid');
+            container.innerHTML = items.map(prod => `
+                <div class="bg-brand-card rounded-2xl overflow-hidden border border-slate-800 hover:border-slate-700 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="relative overflow-hidden aspect-square">
+                            <img src="${prod.image}" alt="${prod.name}" class="w-full h-full object-cover">
+                            <span class="absolute top-2 right-2 bg-brand-dark/80 text-slate-300 text-[10px] font-bold px-2.5 py-1 rounded-md border border-slate-700">
+                                ${prod.category}
+                            </span>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="font-bold text-white text-sm line-clamp-1">${prod.name}</h4>
+                            <p class="text-xs text-slate-400 mt-1 line-clamp-2">${prod.description}</p>
+                        </div>
+                    </div>
+                    <div class="p-4 pt-0 space-y-2">
+                        <div class="text-lg font-black text-brand-neon">
+                            R$ ${prod.price.toLocaleString('pt-BR', {minimumFractionDigits: 2})}
+                        </div>
+                        <button onclick="addToCart('${prod.id}', 'prod')" class="w-full bg-slate-800 hover:bg-brand-neon hover:text-black text-white font-bold py-2 rounded-xl text-xs uppercase transition-all flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-cart-plus"></i> Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // FILTER PRODUCTS
+        function filterProducts(category) {
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('bg-brand-neon', 'text-black');
+                btn.classList.add('bg-brand-card', 'text-slate-300');
+            });
+            event.target.classList.remove('bg-brand-card', 'text-slate-300');
+            event.target.classList.add('bg-brand-neon', 'text-black');
+
+            if (category === 'TODOS') {
+                renderProducts(PRODUCTS);
+            } else {
+                const filtered = PRODUCTS.filter(p => p.category === category);
+                renderProducts(filtered);
+            }
+        }
+
+        // RENDER SERVICES
+        function renderServices() {
+            const container = document.getElementById('servicesGrid');
+            container.innerHTML = SERVICES.map(serv => `
+                <div class="bg-brand-card p-8 rounded-2xl border border-slate-800 hover:border-brand-neon/40 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-brand-neon/10 border border-brand-neon/30 flex items-center justify-center text-brand-neon text-2xl mb-6">
+                            <i class="fa-solid ${serv.icon}"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white uppercase mb-2">${serv.title}</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">${serv.description}</p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-800">
+                        <a href="${createWhatsappMessageUrl(`Olá! Gostaria de solicitar um orçamento para o serviço de ${serv.title}.`)}" target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-slate-800 hover:bg-brand-neon hover:text-black text-white font-bold py-3 rounded-xl text-xs uppercase transition-all">
+                            <i class="fa-brands fa-whatsapp text-sm"></i> Solicitar Orçamento
+                        </a>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // PRODUCT DETAIL MODAL
+        function openProductDetail(id, type) {
+            const item = type === 'bike' ? BICYCLES.find(b => b.id === id) : PRODUCTS.find(p => p.id === id);
+            if (!item) return;
+
+            const modal = document.getElementById('productDetailModal');
+            const content = document.getElementById('productDetailContent');
+
+            content.innerHTML = `
+                <button onclick="closeProductDetail()" class="absolute top-4 right-4 text-slate-400 hover:text-white text-xl">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                    <img src="${item.image}" alt="${item.name}" class="w-full h-64 object-cover rounded-xl border border-slate-700">
+                    <div class="space-y-4">
+                        <span class="text-xs font-bold text-brand-neon uppercase tracking-wider">${item.category}</span>
+                        <h3 class="text-2xl font-bold text-white">${item.name}</h3>
+                        <p class="text-sm text-slate-300">${item.description}</p>
+                        ${item.specs ? `<p class="text-xs text-slate-400 bg-slate-900 p-2.5 rounded-lg border border-slate-800">${item.specs}</p>` : ''}
+                        <div class="text-2xl font-black text-brand-neon">R$ ${item.price.toLocaleString('pt-BR', {minimumFractionDigits: 2})}</div>
+                        <button onclick="addToCart('${item.id}', '${type}'); closeProductDetail();" class="w-full bg-brand-neon hover:bg-brand-hoverNeon text-black font-extrabold py-3 rounded-xl text-xs uppercase">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+            `;
+            modal.classList.remove('hidden');
+        }
+
+        function closeProductDetail() {
+            document.getElementById('productDetailModal').classList.add('hidden');
+        }
+
+        // CART MANAGEMENT
+        function addToCart(id, type) {
+            const item = type === 'bike' ? BICYCLES.find(b => b.id === id) : PRODUCTS.find(p => p.id === id);
+            if (!item) return;
+
+            const existingIndex = cart.findIndex(c => c.id === id);
+            if (existingIndex > -1) {
+                cart[existingIndex].qty += 1;
+            } else {
+                cart.push({ ...item, qty: 1 });
+            }
+
+            saveCart();
+            updateCartUI();
+            toggleCartModal(true);
+        }
+
+        function removeFromCart(id) {
+            cart = cart.filter(item => item.id !== id);
+            saveCart();
+            updateCartUI();
+        }
+
+        function updateQty(id, delta) {
+            const index = cart.findIndex(item => item.id === id);
+            if (index > -1) {
+                cart[index].qty += delta;
+                if (cart[index].qty <= 0) {
+                    cart.splice(index, 1);
+                }
+            }
+            saveCart();
+            updateCartUI();
+        }
+
+        function clearCart() {
+            cart = [];
+            saveCart();
+            updateCartUI();
+        }
+
+        function saveCart() {
+            localStorage.setItem('amigospedal_cart', JSON.stringify(cart));
+        }
+
+        function updateCartUI() {
+            const count = cart.reduce((acc, i) => acc + i.qty, 0);
+            document.getElementById('cartBadgeCount').textContent = count;
+            document.getElementById('cartBadgeCountMobile').textContent = count;
+
+            const list = document.getElementById('cartItemsList');
+            if (cart.length === 0) {
+                list.innerHTML = `<div class="text-center py-12 text-slate-500 text-sm">Seu carrinho está vazio.</div>`;
+            } else {
+                list.innerHTML = cart.map(item => `
+                    <div class="flex items-center justify-between bg-brand-dark p-3 rounded-xl border border-slate-800">
+                        <div class="flex items-center space-x-3">
+                            <img src="${item.image}" class="w-12 h-12 object-cover rounded-lg border border-slate-700">
+                            <div>
+                                <h5 class="text-xs font-bold text-white line-clamp-1">${item.name}</h5>
+                                <span class="text-xs text-brand-neon font-bold">R$ ${(item.price * item.qty).toLocaleString('pt-BR', {minimumFractionDigits: 2})}</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <button onclick="updateQty('${item.id}', -1)" class="w-6 h-6 bg-slate-800 text-slate-300 rounded hover:bg-slate-700 text-xs font-bold">-</button>
+                            <span class="text-xs text-white font-bold">${item.qty}</span>
+                            <button onclick="updateQty('${item.id}', 1)" class="w-6 h-6 bg-slate-800 text-slate-300 rounded hover:bg-slate-700 text-xs font-bold">+</button>
+                            <button onclick="removeFromCart('${item.id}')" class="text-slate-500 hover:text-red-400 text-xs ml-1"><i class="fa-solid fa-trash"></i></button>
+                        </div>
+                    </div>
+                `).join('');
+            }
+
+            const total = cart.reduce((acc, i) => acc + (i.price * i.qty), 0);
+            document.getElementById('cartSubtotal').textContent = `R$ ${total.toLocaleString('pt-BR', {minimumFractionDigits: 2})}`;
+            document.getElementById('cartTotal').textContent = `R$ ${total.toLocaleString('pt-BR', {minimumFractionDigits: 2})}`;
+        }
+
+        function toggleCartModal(forceOpen = false) {
+            const modal = document.getElementById('cartModal');
+            if (forceOpen || modal.classList.contains('hidden')) {
+                modal.classList.remove('hidden');
+            } else {
+                modal.classList.add('hidden');
+            }
+        }
+
+        // CHECKOUT LOGIC
+        function openCheckoutModal() {
+            if (cart.length === 0) {
+                alert('Adicione produtos ao carrinho antes de finalizar.');
+                return;
+            }
+            toggleCartModal(false);
+
+            const total = cart.reduce((acc, i) => acc + (i.price * i.qty), 0);
+            document.getElementById('checkoutTotalVal').textContent = `R$ ${total.toLocaleString('pt-BR', {minimumFractionDigits: 2})}`;
+            
+            const summary = document.getElementById('checkoutSummaryList');
+            summary.innerHTML = cart.map(i => `
+                <div class="flex justify-between">
+                    <span>${i.qty}x ${i.name}</span>
+                    <span>R$ ${(i.price * i.qty).toLocaleString('pt-BR', {minimumFractionDigits: 2})}</span>
+                </div>
+            `).join('');
+
+            document.getElementById('checkoutModal').classList.remove('hidden');
+        }
+
+        function closeCheckoutModal() {
+            document.getElementById('checkoutModal').classList.add('hidden');
+        }
+
+        function processCheckout(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('chkName').value;
+            const phone = document.getElementById('chkPhone').value;
+            const address = document.getElementById('chkAddress').value;
+            const notes = document.getElementById('chkNotes').value;
+
+            const total = cart.reduce((acc, i) => acc + (i.price * i.qty), 0);
+            const orderId = `PED-${Math.floor(1000 + Math.random() * 9000)}`;
+
+            const newOrder = {
+                id: orderId,
+                client: name,
+                phone: phone,
+                address: address,
+                notes: notes,
+                items: [...cart],
+                total: total,
+                status: "NOVO",
+                date: new Date().toISOString().split('T')[0]
+            };
+
+            orders.unshift(newOrder);
+            localStorage.setItem('amigospedal_orders', JSON.stringify(orders));
+
+            // Generate WhatsApp message
+            let itemsText = cart.map(i => `- ${i.qty}x ${i.name} (R$ ${(i.price * i.qty).toFixed(2)})`).join('\n');
+            let msg = `*NOVO PEDIDO DO SITE - AMIGOS DO PEDAL*\n\n` +
+                      `*Pedido:* ${orderId}\n` +
+                      `*Cliente:* ${name}\n` +
+                      `*Telefone:* ${phone}\n` +
+                      `*Endereço:* ${address}\n` +
+                      `*Observação:* ${notes || 'Nenhuma'}\n\n` +
+                      `*ITENS DO PEDIDO:*\n${itemsText}\n\n` +
+                      `*TOTAL:* R$ ${total.toLocaleString('pt-BR', {minimumFractionDigits: 2})}`;
+
+            alert(`Pedido ${orderId} registrado com sucesso! Redirecionando para atendimento...`);
+            
+            clearCart();
+            closeCheckoutModal();
+            window.open(createWhatsappMessageUrl(msg), '_blank');
+        }
+
+        // CONTACT FORM LOGIC
+        function handleContactSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('contactName').value;
+            const phone = document.getElementById('contactPhone').value;
+            const subject = document.getElementById('contactSubject').value;
+            const message = document.getElementById('contactMessage').value;
+
+            const msg = `*CONTATO VIA SITE - AMIGOS DO PEDAL*\n\n` +
+                        `*Nome:* ${name}\n` +
+                        `*Telefone:* ${phone}\n` +
+                        `*Assunto:* ${subject}\n` +
+                        `*Mensagem:* ${message}`;
+
+            window.open(createWhatsappMessageUrl(msg), '_blank');
+            document.getElementById('contactForm').reset();
+        }
+
+        // MOBILE MENU TOGGLE
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        // ADMIN MODAL & LOGIC
+        function openAdminModal() {
+            renderAdminOrders();
+            document.getElementById('adminModal').classList.remove('hidden');
+        }
+
+        function closeAdminModal() {
+            document.getElementById('adminModal').classList.add('hidden');
+        }
+
+        function renderAdminOrders() {
+            const tbody = document.getElementById('adminOrdersTable');
+            if (orders.length === 0) {
+                tbody.innerHTML = `<tr><td colspan="6" class="p-4 text-center text-slate-500">Nenhum pedido registrado.</td></tr>`;
+                return;
+            }
+
+            tbody.innerHTML = orders.map(ord => `
+                <tr class="hover:bg-slate-900/50">
+                    <td class="p-3 font-bold text-white">${ord.id}</td>
+                    <td class="p-3">${ord.client}</td>
+                    <td class="p-3">${ord.phone}</td>
+                    <td class="p-3 text-brand-neon font-bold">R$ ${ord.total.toLocaleString('pt-BR', {minimumFractionDigits: 2})}</td>
+                    <td class="p-3">
+                        <span class="px-2 py-0.5 rounded text-[10px] font-extrabold bg-emerald-950 text-emerald-400 border border-emerald-800">
+                            ${ord.status}
+                        </span>
+                    </td>
+                    <td class="p-3">
+                        <button onclick="updateOrderStatus('${ord.id}')" class="text-xs bg-slate-800 hover:bg-slate-700 px-2 py-1 rounded text-slate-300">
+                            Status
+                        </button>
+                    </td>
+                </tr>
+            `).join('');
+        }
+
+        function updateOrderStatus(id) {
+            const statuses = ["NOVO", "EM ANÁLISE", "CONFIRMADO", "EM PREPARAÇÃO", "PRONTO", "FINALIZADO", "CANCELADO"];
+            const ord = orders.find(o => o.id === id);
+            if (!ord) return;
+
+            const currentIndex = statuses.indexOf(ord.status);
+            const nextIndex = (currentIndex + 1) % statuses.length;
+            ord.status = statuses[nextIndex];
+
+            localStorage.setItem('amigospedal_orders', JSON.stringify(orders));
+            renderAdminOrders();
+        }
+    </script>
+</body>
+</html>
